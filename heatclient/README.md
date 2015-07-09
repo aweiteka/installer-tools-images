@@ -8,7 +8,7 @@ This is a base image containing the OpenStack heat client. It may be used stand-
 
 1. In your heat template repository create a Dockerfile built on this image and add your heat templates.
 
-        FROM heatclient
+        FROM aweiteka/heatclient
         MAINTAINER <you@example.com>
 
         ADD <repo/path/to/templates> /root/heat-templates/
@@ -20,7 +20,7 @@ This is a base image containing the OpenStack heat client. It may be used stand-
 1. Change to a directory of heat template(s).
 1. Run this image. You will be dropped into the container shell.
 
-        atomic run heatclient
+        atomic run aweiteka/heatclient
 
 1. Execute heat commands. The heat templates from your host are bindmounted to the current working directory. For example:
 

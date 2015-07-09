@@ -8,7 +8,7 @@ This is a base image containing the ansible client. It may be used stand-alone b
 
 1. In your ansible repository create a Dockerfile built on this image and add your playbooks.
 
-        FROM ansible-client
+        FROM aweiteka/ansible-client
         MAINTAINER <you@example.com>
 
         ADD <repo/path/to/playbooks> /root/ansible-playbooks/
@@ -20,7 +20,7 @@ This is a base image containing the ansible client. It may be used stand-alone b
 1. Change to a directory of ansible playbooks.
 1. Run this image. You will be dropped into the container shell.
 
-        atomic run ansible-client
+        atomic run aweiteka/ansible-client
 
 1. Execute ansible commands. The playbooks from your host are bindmounted to the current working directory. For example:
 
